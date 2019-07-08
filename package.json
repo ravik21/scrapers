@@ -1,0 +1,24 @@
+{
+  "name": "voyage-trends-scrapper",
+  "version": "1.0.0",
+  "repository": "https://ravikumar21@bitbucket.org/ravikumar21/voyage-trends-scrapescript.git",
+  "author": "Rajender <rthakur.dev@gmail.com>",
+  "scripts": {
+    "voyage-trends:location": "MYSQL_SSL=0 node -r esm voyage-trends/location.js",
+    "voyage-trends:blog": "MYSQL_SSL=0 node -r esm voyage-trends/blog.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "dotenv": "^7.0.0",
+    "esm": "^3.2.22",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "moment": "^2.24.0",
+    "moment-timezone": "^0.5.25",
+    "mysql2": "^1.6.5",
+    "node-cron": "^2.0.3",
+    "npm": "^6.9.0",
+    "puppeteer": "^1.14.0"
+  }
+}
