@@ -5,6 +5,7 @@
   "author": "Rajender <rthakur.dev@gmail.com>",
   "scripts": {
     "voyage-trends:location": "MYSQL_SSL=0 node -r esm voyage-trends/location.js",
+    "voyage-trends:article": "MYSQL_SSL=0 node -r esm voyage-trends/article.js",
     "voyage-trends:blog": "MYSQL_SSL=0 node -r esm voyage-trends/blog.js"
   },
   "license": "MIT",

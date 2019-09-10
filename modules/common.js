@@ -49,5 +49,29 @@ export default {
         header => header.innerText,
         header
       );
-  }
+  },
+
+  async cleanObject(obj) {
+    const removeValue = [
+      '',
+      '-',
+      'n/a',
+      'not specified',
+      'no category',
+    ];
+
+    for (var propName in obj) {
+      if (obj[propName] === undefined || obj[propName] === null) {
+        delete obj[propName];
+      } else if (removeValue.includes(obj[propName].toString().toLowerCase())) {
+        delete obj[propName];
+      }
+    }
+
+    return obj;
+  },
+
+  async sleep(millis) {
+    return new Promise(resolve => setTimeout(resolve, millis));
+  },
 }
