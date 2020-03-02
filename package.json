@@ -1,12 +1,13 @@
 {
-  "name": "voyage-trends-scrapper",
+  "name": "scrapers",
   "version": "1.0.0",
   "repository": "https://ravikumar21@bitbucket.org/ravikumar21/voyage-trends-scrapescript.git",
-  "author": "Rajender <rthakur.dev@gmail.com>",
+  "author": "Ravi <webartisan.ravi@gmail.com>",
   "scripts": {
-    "voyage-trends:location": "MYSQL_SSL=0 node -r esm voyage-trends/location.js",
-    "voyage-trends:article": "MYSQL_SSL=0 node -r esm voyage-trends/article.js",
-    "voyage-trends:blog": "MYSQL_SSL=0 node -r esm voyage-trends/blog.js"
+    "theculturetrip:location": "MYSQL_SSL=0 node -r esm scripts/theculturetrip.com/location.js",
+    "theculturetrip:article_meta": "MYSQL_SSL=0 node -r esm scripts/theculturetrip.com/article_meta.js",
+    "lonelyplanet:article": "MYSQL_SSL=0 node -r esm voyage-trends/article.js",
+    "theculturetrip:blog": "MYSQL_SSL=0 node -r esm voyage-trends/blog.js"
   },
   "license": "MIT",
   "dependencies": {
@@ -20,6 +21,7 @@
     "mysql2": "^1.6.5",
     "node-cron": "^2.0.3",
     "npm": "^6.9.0",
-    "puppeteer": "^1.14.0"
+    "puppeteer": "^1.14.0",
+    "set-interval-async": "^1.0.30"
   }
 }
